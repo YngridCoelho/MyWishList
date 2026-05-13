@@ -1,0 +1,548 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#F3C8DD;
+}
+
+header{
+    width:100%;
+    background:#3A345B;
+    padding:25px;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:999;
+}
+
+.logo{
+    float:left;
+    color:#F3C8DD;
+    font-size:1.7rem;
+    font-weight:bold;
+}
+
+nav{
+    float:right;
+    margin-top:5px;
+}
+
+nav a{
+    color:#F3C8DD;
+    text-decoration:none;
+    margin-left:20px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#D183A9;
+}
+
+.clear{
+    clear:both;
+}
+
+.parallax{
+    height:700px;
+    background-image:url('https://www.imagensanimadas.com/data/media/1595/adolescente-imagem-animada-0016.gif');
+    background-attachment:fixed;
+    background-position:center;
+    background-size:20%;
+    background-repeat: no-repeat;
+
+}
+
+.overlay{
+    width:100%;
+    height:100%;
+    background:rgba(58,52,91,0.7);
+    text-align:center;
+    color:white;
+    padding-top:110px;
+}
+
+.overlay h1{
+    font-size:3rem;
+    animation:fadeDown 1s;
+}
+
+.overlay p{
+    margin-top:20px;
+    animation:fadeUp 1s;
+}
+
+.wrapper{
+    width:100%;
+    padding:30px;
+}
+
+aside{
+    width:22%;
+    float:left;
+    background:#71557A;
+    padding:20px;
+    border-radius:16px;
+}
+
+aside h2{
+    color:#F3C8DD;
+    margin-bottom:20px;
+}
+
+aside a{
+    display:block;
+    background:#D183A9;
+    padding:14px;
+    margin-top:12px;
+    border-radius:10px;
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+aside a:hover{
+    background:#4B1535;
+    transform:translateX(5px);
+}
+
+main{
+    width:74%;
+    float:right;
+}
+
+.formulario{
+    background:white;
+    padding:30px;
+    border-radius:16px;
+}
+
+.formulario h2{
+    color:#3A345B;
+    margin-bottom:20px;
+}
+
+.formulario input,
+.formulario select{
+    width:100%;
+    padding:15px;
+    margin-top:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+}
+
+.formulario button{
+    margin-top:20px;
+    padding:15px 30px;
+    border:none;
+    border-radius:12px;
+    background:#4B1535;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.formulario button:hover{
+    background:#3A345B;
+    transform:translateY(-3px);
+}
+
+.cards{
+    margin-top:30px;
+}
+
+.card{
+    width:31%;
+    float:left;
+    margin-right:3.5%;
+    margin-bottom:25px;
+    background:white;
+    border-radius:16px;
+    overflow:hidden;
+    transition:0.3s;
+    animation:fadeCard 0.5s;
+}
+
+.card:nth-child(3n){
+    margin-right:0;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card-content h3{
+    color:#3A345B;
+    margin-bottom:10px;
+}
+
+.card-content p{
+    margin-top:8px;
+}
+
+.prioridade{
+    margin-top:15px;
+    display:inline-block;
+    padding:8px 12px;
+    border-radius:8px;
+    color:white;
+}
+
+.alta{
+    background:#4B1535;
+}
+
+.media{
+    background:#71557A;
+}
+
+.baixa{
+    background:#D183A9;
+}
+
+.acoes{
+    margin-top:20px;
+}
+
+.acoes button{
+    padding:10px 14px;
+    border:none;
+    border-radius:8px;
+    margin-right:8px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.acoes button:hover{
+    transform:scale(1.05);
+}
+
+.btn-desejado{
+    background:#71557A;
+    color:white;
+}
+
+.btn-comprado{
+    background:#3A345B;
+    color:white;
+}
+
+.btn-excluir{
+    background:#4B1535;
+    color:white;
+}
+
+.comprado{
+    opacity:0.6;
+}
+
+.comprado h3{
+    text-decoration:line-through;
+}
+
+.titulo-pagina{
+    padding-top:140px;
+    text-align:center;
+    color:#3A345B;
+}
+
+.pagina-cards{
+    padding:30px;
+}
+
+footer{
+    clear:both;
+    background:#3A345B;
+    color:#F3C8DD;
+    text-align:center;
+    padding:30px;
+    margin-top:40px;
+}
+
+@keyframes fadeDown{
+
+    from{
+        opacity:0;
+        transform:translateY(-40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+@keyframes fadeCard{
+
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+@media screen and (max-width:900px){
+
+    aside{
+        width:100%;
+        margin-bottom:25px;
+    }
+
+    main{
+        width:100%;
+    }
+
+    .card{
+        width:48%;
+        margin-right:4%;
+    }
+
+    .card:nth-child(2n){
+        margin-right:0;
+    }
+
+}
+
+@media screen and (max-width:620px){
+
+    .logo{
+        float:none;
+        text-align:center;
+        margin-bottom:15px;
+    }
+
+    nav{
+        float:none;
+        text-align:center;
+    }
+
+    .overlay h1{
+        font-size:2rem;
+    }
+
+    .card{
+        width:100%;
+        margin-right:0;
+    }
+
+}
+
+.sem-produtos {
+    text-align: center;
+    padding: 60px 20px;
+    background: white;
+    border-radius: 16px;
+    color: #3A345B;
+}
+
+.sem-produtos p {
+    font-size: 1.2rem;
+}
+
+.btn-desejado {
+    background: #71557A;
+    color: white;
+}
+
+.btn-comprado {
+    background: #3A345B;
+    color: white;
+}
+
+.btn-excluir {
+    background: #4B1535;
+    color: white;
+}
+
+.acoes button {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 8px;
+    margin-right: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.acoes button:hover {
+    transform: scale(1.05);
+}
+
+.prioridade {
+    margin-top: 15px;
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 8px;
+    color: white;
+}
+
+.alta {
+    background: #4B1535;
+}
+
+.media {
+    background: #71557A;
+}
+
+.baixa {
+    background: #D183A9;
+}
+
+.comprado {
+    opacity: 0.7;
+}
+
+.comprado h3 {
+    text-decoration: line-through;
+}
+
+/* Garantir que os cards apareçam */
+.cards {
+    margin-top: 30px;
+    min-height: 200px;
+}
+
+.card {
+    width: 31%;
+    float: left;
+    margin-right: 3.5%;
+    margin-bottom: 25px;
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: 0.3s;
+    animation: fadeCard 0.5s;
+    display: block; /* Garantir que seja visível */
+}
+
+/* Para garantir que os cards apareçam mesmo sem imagem */
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Garantir que os cards sejam visíveis */
+.cards {
+    min-height: 400px;
+    width: 100%;
+}
+
+.card {
+    width: 31%;
+    float: left;
+    margin-right: 3.5%;
+    margin-bottom: 25px;
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: 0.3s;
+    display: block !important;
+}
+
+.card:nth-child(3n) {
+    margin-right: 0;
+}
+
+.sem-produtos {
+    text-align: center;
+    padding: 60px 20px;
+    background: white;
+    border-radius: 16px;
+    color: #3A345B;
+    width: 100%;
+    float: left;
+}
+
+.sem-produtos p {
+    font-size: 1.2rem;
+}
+
+.btn-comprado {
+    background: #3A345B;
+    color: white;
+}
+
+.btn-excluir {
+    background: #4B1535;
+    color: white;
+}
+
+.acoes button {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 8px;
+    margin-right: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.acoes button:hover {
+    transform: scale(1.05);
+}
+
+.prioridade {
+    margin-top: 15px;
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 8px;
+    color: white;
+}
+
+.alta {
+    background: #4B1535;
+}
+
+.media {
+    background: #71557A;
+}
+
+.baixa {
+    background: #D183A9;
+}
+
+.comprado {
+    opacity: 0.7;
+}
+
+.comprado h3 {
+    text-decoration: line-through;
+}
+
+/* Limpar floats */
+.clear {
+    clear: both;
+}

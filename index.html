@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>WishList</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        WishList
+    </div>
+
+    <nav>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="todos.html">
+            Todos
+        </a>
+
+        <a href="desejados.html">
+            Desejados
+        </a>
+
+        <a href="comprados.html">
+            Comprados
+        </a>
+
+    </nav>
+
+    <div class="clear"></div>
+
+</header>
+
+<section class="parallax">
+
+    <div class="overlay">
+
+        <h1>
+            Organize tudo o que você deseja comprar
+        </h1>
+
+        <p>
+            Sua wishlist moderna
+        </p>
+
+    </div>
+
+</section>
+
+<div class="wrapper">
+
+    <aside>
+
+        <h2>
+            Categorias
+        </h2>
+
+        <a href="todos.html">
+            Todos
+        </a>
+
+        <a href="desejados.html">
+            Desejados
+        </a>
+
+        <a href="comprados.html">
+            Comprados
+        </a>
+
+    </aside>
+
+    <main>
+
+        <section class="formulario">
+
+            <h2>
+                Adicionar produto
+            </h2>
+
+            <input
+            type="text"
+            id="nome"
+            placeholder="Nome do produto">
+
+            <input
+            type="number"
+            id="preco"
+            placeholder="Preço">
+
+            <input
+            type="text"
+            id="imagem"
+            placeholder="URL da imagem">
+
+            <input
+            type="text"
+            id="loja"
+            placeholder="Loja">
+
+            <select id="prioridade">
+
+                <option value="Alta">
+                    Alta prioridade
+                </option>
+
+                <option value="Média">
+                    Média prioridade
+                </option>
+
+                <option value="Baixa">
+                    Baixa prioridade
+                </option>
+
+            </select>
+
+            <button
+            type="button"
+            onclick="adicionarProduto()">
+
+            Adicionar produto
+
+            </button>
+
+        </section>
+
+    </main>
+
+    <div class="clear"></div>
+
+</div>
+
+<footer>
+
+    <h3>
+        WishList
+    </h3>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
