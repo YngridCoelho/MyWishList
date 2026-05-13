@@ -1,21 +1,21 @@
 {
-  "name": "MyWishList",
-  "short_name": "WishLIst",
-  "start_url": "./index.html",
-  "display": "standalone",
-  "background_color": "#f9f9f9",
-  "theme_color": "#111827",
-  "orientation": "portrait",
-  "icons": [
-    {
-      "src": "imagens/logo.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "imagens/logo.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    }
-  ]
+    "name": "MyWishList",
+    "short_name": "WishLIst",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#F3C8DD",
+    "theme_color": "#3A345B",
+    "description": "Organize tudo o que você deseja comprar, diva!",
+   "icons": [
+        {
+            "src": "icon-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "icon-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
 }
