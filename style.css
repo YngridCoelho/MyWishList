@@ -610,9 +610,9 @@ footer{
     animation-delay:2.5s;
 }
 .icon7{
-    width:70px;
-    top:380px;
-    left:30%;
+    width:50px;
+    top:500px;
+    left:18%;
     animation-delay:2.5s;
 }
 .icon8{
@@ -634,8 +634,6 @@ footer{
     left:10%;
     animation-delay:2.5s;
 }
-
-
 
 .overlay{
     width:100%;
