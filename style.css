@@ -428,7 +428,6 @@ footer{
     text-decoration: line-through;
 }
 
-/* Garantir que os cards apareçam */
 .cards {
     margin-top: 30px;
     min-height: 200px;
@@ -444,10 +443,9 @@ footer{
     overflow: hidden;
     transition: 0.3s;
     animation: fadeCard 0.5s;
-    display: block; /* Garantir que seja visível */
+    display: block;
 }
 
-/* Para garantir que os cards apareçam mesmo sem imagem */
 .card img {
     width: 100%;
     height: 220px;
@@ -455,7 +453,6 @@ footer{
     display: block;
 }
 
-/* Garantir que os cards sejam visíveis */
 .cards {
     min-height: 400px;
     width: 100%;
@@ -542,7 +539,6 @@ footer{
     text-decoration: line-through;
 }
 
-/* Limpar floats */
 .clear {
     clear: both;
 }
@@ -610,7 +606,32 @@ footer{
 .icon6{
     width:70px;
     top:380px;
-    left:60%;
+    left:65%;
+    animation-delay:2.5s;
+}
+.icon7{
+    width:70px;
+    top:380px;
+    left:30%;
+    animation-delay:2.5s;
+}
+.icon8{
+    width:70px;
+    top:200px;
+    left:30%;
+    animation-delay:2.5s;
+}
+
+.icon9{
+    width:70px;
+    top:380px;
+    left:80%;
+    animation-delay:2.5s;
+}
+.icon10{
+    width:70px;
+    top:380px;
+    left:10%;
     animation-delay:2.5s;
 }
 
