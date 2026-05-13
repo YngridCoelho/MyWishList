@@ -7,6 +7,27 @@
 
 <meta name="viewport"
 content="width=device-width, initial-scale=1.0">
+<link rel="manifest" href="manifest.json">
+
+<script>
+    window.addEventListener('load', () => {
+        registerSW();
+    });
+
+    async function registerSW() {
+        if ('serviceWorker' in navigator) {
+            try {
+                await navigator
+                    .serviceWorker
+                    .register('serviceworker.js');
+            }
+
+            catch (e) {
+                console.log('SW registration failed');
+            }
+        }
+    }
+</script>
 
 <title>WishList</title>
 
@@ -107,10 +128,16 @@ content="width=device-width, initial-scale=1.0">
             id="imagem"
             placeholder="URL da imagem">
 
-            <input
-            type="text"
-            id="loja"
-            placeholder="Loja">
+           <select id="loja">
+            <option value="Shopee">Shopee</option>
+            <option value="Amazon">Amazon</option>
+            <option value="Mercado Livre">Mercado Livre</option>
+            <option value="Shein">Shein</option>
+            <option value="Aliexpress">Aliexpress</option>
+            <option value="Temu">Temu</option>
+            <option value="Dafiti">Dafiti</option>
+            <option value="O Boticário">O Boticário</option>
+        </select>
 
             <select id="prioridade">
 
