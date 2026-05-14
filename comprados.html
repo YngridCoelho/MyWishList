@@ -89,6 +89,34 @@ content="width=device-width, initial-scale=1.0">
 
 </footer>
 
+
+<div id="editModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="fecharModal()">&times;</span>
+        <h2>Editar Produto</h2>
+        <input type="hidden" id="editId">
+        <input type="text" id="editNome" placeholder="Nome do produto">
+        <input type="text" id="editPreco" placeholder="Preço">
+        <input type="text" id="editImagem" placeholder="URL da imagem">
+        <select id="editLoja">
+            <option value="Shopee">Shopee</option>
+            <option value="Amazon">Amazon</option>
+            <option value="Mercado Livre">Mercado Livre</option>
+            <option value="Shein">Shein</option>
+            <option value="Aliexpress">Aliexpress</option>
+            <option value="Temu">Temu</option>
+            <option value="Dafiti">Dafiti</option>
+            <option value="O Boticário">O Boticário</option>
+        </select>
+        <select id="editPrioridade">
+            <option value="Alta">Alta prioridade</option>
+            <option value="Média">Média prioridade</option>
+            <option value="Baixa">Baixa prioridade</option>
+        </select>
+        <button onclick="salvarEdicao()">Salvar alterações</button>
+    </div>
+</div>
+
 <script src="script.js"></script>
 
 </body>

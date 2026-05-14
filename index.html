@@ -10,25 +10,25 @@ content="width=device-width, initial-scale=1.0">
 <link rel="manifest" href="manifest.json">
 
 
-<script>
-    window.addEventListener('load', () => {
-        registerSW();
-    });
+    <script>
+        window.addEventListener('load', () => {
+            registerSW();
+        });
 
-    async function registerSW() {
-        if ('serviceWorker' in navigator) {
-            try {
-                await navigator
-                    .serviceWorker
-                    .register('serviceworker.js');
-            }
+        async function registerSW() {
+            if ('serviceWorker' in navigator) {
+                try {
+                    await navigator
+                        .serviceWorker
+                        .register('serviceworker.js');
+                }
 
-            catch (e) {
-                console.log('SW registration failed');
+                catch (e) {
+                    console.log('SW registration failed');
+                }
             }
         }
-    }
-</script>
+    </script>
 
 <title>WishList</title>
 
@@ -38,153 +38,163 @@ content="width=device-width, initial-scale=1.0">
 
 <body>
 
-<header>
+    <header>
+        <div class="logo">
+            WishList
+        </div>
+        <nav>
+            <a href="index.html">
+                Home
+            </a>
+        </nav>
+        <div class="clear"></div>
+    </header>
 
-    <div class="logo">
-        WishList
-    </div>
+    <section class="parallax">
+        <div class="floating-icons">
+            <img src="./imagens/amazon.png" class="icon icon1">
+            <img src="./imagens/aliexpress.png" class="icon icon2">
+            <img src="./imagens/ml.png" class="icon icon3">
+            <img src="./imagens/shein.png" class="icon icon4">
+            <img src="./imagens/shopee.png" class="icon icon5">
+            <img src="./imagens/amazon.png" class="icon icon6">
+            <img src="./imagens/aliexpress.png" class="icon icon7">
+            <img src="./imagens/ml.png" class="icon icon8">
+            <img src="./imagens/shein.png" class="icon icon9">
+            <img src="./imagens/shopee.png" class="icon icon10">
+        </div>
+        <div class="overlay">
+            <h1>Organize tudo o que você deseja comprar</h1>
+            <p>Sua wishlist moderna</p>
+        </div>
 
-    <nav>
+    </section>
 
-        <a href="index.html">
-            Home
-        </a>
-    </nav>
+    <div class="wrapper">
 
-    <div class="clear"></div>
-
-</header>
-
-<section class="parallax">
-
-    <div class="floating-icons">
-
-        <img src="./imagens/amazon.png" class="icon icon1">
-        <img src="./imagens/aliexpress.png" class="icon icon2">
-        <img src="./imagens/ml.png" class="icon icon3">
-        <img src="./imagens/shein.png" class="icon icon4">
-        <img src="./imagens/shopee.png" class="icon icon5">
-        <img src="./imagens/amazon.png" class="icon icon6">
-        <img src="./imagens/aliexpress.png" class="icon icon7">
-        <img src="./imagens/ml.png" class="icon icon8">
-        <img src="./imagens/shein.png" class="icon icon9">
-        <img src="./imagens/shopee.png" class="icon icon10">
-
-
-
-    </div>
-
-    <div class="overlay">
-
-        <h1>
-            Organize tudo o que você deseja comprar
-        </h1>
-
-        <p>
-            Sua wishlist moderna
-        </p>
-
-    </div>
-
-</section>
-
-<div class="wrapper">
-
-    <aside>
-
-        <h2>
-            Categorias
-        </h2>
-
-        <a href="todos.html">
-            Todos
-        </a>
-
-        <a href="desejados.html">
-            Desejados
-        </a>
-
-        <a href="comprados.html">
-            Comprados
-        </a>
-
-    </aside>
-
-    <main>
-
-        <section class="formulario">
+        <aside>
 
             <h2>
-                Adicionar produto
+                Categorias
             </h2>
 
-            <input
-            type="text"
-            id="nome"
-            placeholder="Nome do produto">
+            <a href="todos.html">
+                Todos
+            </a>
 
-            <input
-            type="number"
-            id="preco"
-            placeholder="Preço">
+            <a href="desejados.html">
+                Desejados
+            </a>
 
-            <input
-            type="text"
-            id="imagem"
-            placeholder="URL da imagem">
+            <a href="comprados.html">
+                Comprados
+            </a>
 
-           <select id="loja">
-            <option value="Shopee">Shopee</option>
-            <option value="Amazon">Amazon</option>
-            <option value="Mercado Livre">Mercado Livre</option>
-            <option value="Shein">Shein</option>
-            <option value="Aliexpress">Aliexpress</option>
-            <option value="Temu">Temu</option>
-            <option value="Dafiti">Dafiti</option>
-            <option value="O Boticário">O Boticário</option>
-        </select>
+        </aside>
 
-            <select id="prioridade">
+        <main>
 
-                <option value="Alta">
-                    Alta prioridade
-                </option>
+            <section class="formulario">
 
-                <option value="Média">
-                    Média prioridade
-                </option>
+                <h2>
+                    Adicionar produto
+                </h2>
 
-                <option value="Baixa">
-                    Baixa prioridade
-                </option>
+                <input
+                type="text"
+                id="nome"
+                placeholder="Nome do produto">
 
+                <input
+                type="text"
+                id="preco"
+                placeholder="Preço">
+
+                <input
+                type="text"
+                id="imagem"
+                placeholder="URL da imagem">
+
+            <select id="loja">
+                <option value="Shopee">Shopee</option>
+                <option value="Amazon">Amazon</option>
+                <option value="Mercado Livre">Mercado Livre</option>
+                <option value="Shein">Shein</option>
+                <option value="Aliexpress">Aliexpress</option>
+                <option value="Temu">Temu</option>
+                <option value="Dafiti">Dafiti</option>
+                <option value="O Boticário">O Boticário</option>
             </select>
 
-            <button
-            type="button"
-            onclick="adicionarProduto()">
+                <select id="prioridade">
 
-            Adicionar produto
+                    <option value="Alta">
+                        Alta prioridade
+                    </option>
 
-            </button>
+                    <option value="Média">
+                        Média prioridade
+                    </option>
 
-        </section>
+                    <option value="Baixa">
+                        Baixa prioridade
+                    </option>
 
-    </main>
+                </select>
 
-    <div class="clear"></div>
+                <button
+                type="button"
+                onclick="adicionarProduto()">
 
-</div>
+                Adicionar produto
 
-<footer>
+                </button>
 
-    <h3>
-        WishList
-    </h3>
+            </section>
 
-</footer>
+        </main>
 
-<script src="script.js"></script>
+        <div class="clear"></div>
+
+    </div>
+
+    <footer>
+
+        <h3>
+            WishList
+        </h3>
+
+    </footer>
+
+
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fecharModal()">&times;</span>
+            <h2>Editar Produto</h2>
+            <input type="hidden" id="editId">
+            <input type="text" id="editNome" placeholder="Nome do produto">
+            <input type="text" id="editPreco" placeholder="Preço">
+            <input type="text" id="editImagem" placeholder="URL da imagem">
+            <select id="editLoja">
+                <option value="Shopee">Shopee</option>
+                <option value="Amazon">Amazon</option>
+                <option value="Mercado Livre">Mercado Livre</option>
+                <option value="Shein">Shein</option>
+                <option value="Aliexpress">Aliexpress</option>
+                <option value="Temu">Temu</option>
+                <option value="Dafiti">Dafiti</option>
+                <option value="O Boticário">O Boticário</option>
+            </select>
+            <select id="editPrioridade">
+                <option value="Alta">Alta prioridade</option>
+                <option value="Média">Média prioridade</option>
+                <option value="Baixa">Baixa prioridade</option>
+            </select>
+            <button onclick="salvarEdicao()">Salvar alterações</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 
 </body>
 
